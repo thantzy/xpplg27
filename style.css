@@ -4,7 +4,6 @@ body {
   background: url(section1.jpg);
   height: auto;
   width: 100%;
-  margin: auto;
 }
 
 * {
@@ -41,8 +40,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin: auto;
 }
 
 .logo {
@@ -54,8 +51,7 @@ nav {
 }
 
 .links {
-  width: 100%;
-  margin: auto;
+  margin: 0 0 auto;
   list-style: none;
   display: flex;
 }
@@ -180,10 +176,6 @@ a {
 }
 .journey-content:hover {
   transform: scale(1.1);
-}
-
-#section-2 {
-  width: 120%;
 }
 
 .section-second {
@@ -319,7 +311,6 @@ a {
 }
 
 .judul-gallery {
-  width: 120%;
   height: auto;
   text-align: center;
   font-size: 30px;
