@@ -323,7 +323,7 @@ a {
 }
 
 .section-forth {
-  width: auto;
+  width: 100%;
 }
 
 .all-sosmed {
@@ -386,7 +386,10 @@ li {
 
 .form {
   background-color: cadetblue;
-  padding-left: 10%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   padding-top: 90px;
   height: 550px;
 }
@@ -411,6 +414,7 @@ input:hover {
 .judul-form {
   background-color: white;
   padding: 60px;
+  width: 50%;
   margin-right: 100px;
   border-radius: 20px;
   box-shadow: 5px 5px 5px black;
