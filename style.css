@@ -5,6 +5,11 @@ body {
   height: auto; 
 }
 
+html{
+  width: 100%;
+  max-width: 738px;
+}
+
 * {
   margin: 0;
   padding: 0;
