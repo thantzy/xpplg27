@@ -2,8 +2,7 @@
 
 body {
   background: url(section1.jpg);
-  height: auto;
-  width: 100%;
+  height: auto; 
 }
 
 * {
@@ -38,6 +37,7 @@ header {
 
 nav {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -60,6 +60,7 @@ nav {
   color: white;
   font-weight: bold;
   margin-right: 20px;
+  width: 100%;
 }
 
 a {
@@ -310,6 +311,11 @@ a {
   width: 100%;
 }
 
+#section-33{
+  width: 100%;
+  height: auto;
+}
+
 .judul-gallery {
   height: auto;
   text-align: center;
@@ -327,10 +333,7 @@ a {
   height: auto;
 }
 
-#section-4 {
-  width: 100%;
-  height: auto;
-}
+
 
 .all-sosmed {
   width: 100%;
