@@ -374,6 +374,7 @@ li {
   border-radius: 10px;
   cursor: pointer;
   padding: 20px;
+  width: 100% auto;
   height: auto;
   box-shadow: 5px 5px 5px black;
   transition: 0.5s;
