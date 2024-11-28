@@ -1,0 +1,440 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  background: url(section1.jpg);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "poppins";
+    scrollbar-color: red ;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* START NAVBAR */
+
+.image-head{
+    height: 30px;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+
+header {
+    background-color: rgb(95, 153, 103);
+    padding: 20px 0;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    box-shadow: 0 0 10px black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 20px; 
+    color: #335338;
+    display: flex;
+}
+
+.links {
+    list-style: none;
+    display: flex;  
+}
+
+.links li {
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: transform 1s;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: white;
+    box-shadow: 5px 5px 5px black;
+    background-color: burlywood;
+    border-radius: 5px;
+    padding: 5px;
+    transform: scale(2.2);
+}
+
+/* section */
+
+.section-first{
+    background:url(section1.jpg);
+    height: 670px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.first-content{
+    color: white;
+    text-shadow: 5px 5px 5px black  ;
+}
+
+.first-content h1{
+    font-size: 6rem;
+}
+
+.first-content p{
+    font-size: 1.5rem;
+}
+
+.judul-journey h1{
+    font-size: 40px;
+    padding: 4vh;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 5px 5px 5px #000000;
+    box-shadow: 0 0 5px black;
+}
+
+.all-journey{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 4rem;
+    gap: 1rem;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.journey-content{
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+    border-radius: 20px;
+    background-color: aliceblue;
+    transition: transform 0.3s;
+    position: relative;
+    animation: mymove 4s infinite;
+}
+
+.journey-2{
+    position: relative;
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    0% {
+        top: 0;
+      }
+      50% {
+        top: 50px;
+      }
+      50% {
+        top: 70px;
+      }
+      100% {
+        top: 0;
+      }
+    }
+
+@keyframes mymove {
+    0% {
+        top: 0;
+      }
+      50% {
+        top: 50px;
+      }
+      50% {
+        top: 50px;
+      }
+      100% {
+        top: 0;
+      }
+    }
+.journey-content:hover{
+    transform: scale(1.1);
+}
+
+.section-second{
+    background: linear-gradient(200deg, #528d5c,#fff);
+    padding-bottom: 40px;
+}
+
+.image-1 {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    max-width: 400px;
+    background-color: white;
+    aspect-ratio: 16/9;
+}
+
+.select-number li{
+    color: white;
+    font-weight: bold;
+    list-style: none;
+    padding: 30px;
+    border-radius: 100%;
+    background-color: blue;
+}
+
+.select-number{
+    display: flex;
+    gap: 3rem;
+    padding: 50px;
+    justify-content: center;
+}
+
+.gallery-content{
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    gap: 2rem;
+    transition: all;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 20px 20px 60px;
+    box-shadow: 5px 5px black;
+    margin-top: 110px;
+    margin-bottom: 40px;
+    aspect-ratio: 4/3;
+    cursor: pointer;
+    position: relative;
+    animation: move2 4s infinite;
+    transition: 0.5s;
+}
+
+.container:hover{
+    background-color: brown;
+}
+@keyframes move2 {
+    0% {
+        top: 0;
+      }
+      50% {
+        top: 20px;
+      }
+      50% {
+        top: 20px;
+      }
+      100% {
+        top: 0;
+      }
+    }
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .7s ease;
+    z-index: 2;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+  }
+
+  .text {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+  }
+
+  .image:hover{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    transform: blur(8px);
+  }
+
+
+  .section-third{
+    height: 800px;
+    width: auto;
+    backdrop-filter: blur(5px);
+  }
+
+  .judul-gallery{
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .judul-gallery h1{
+    background-color: burlywood;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+  }
+
+  .section-forth{
+    width: auto;
+  }
+
+  .all-sosmed{
+    height: 300px;
+    background-color: #1d6729;
+    padding-top: 80px;
+  }
+
+
+  .sosmed{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    height: auto;
+    font-weight: bold;
+    justify-content: center;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  .judul-contact h1{
+    background-color: burlywood;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+.judul-contact{
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 0 5px black;
+    width: 100%;
+    height: auto;
+}
+
+.instagram, .facebook, .whatsapp{
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    margin-left: 10px;
+    height: auto;
+    box-shadow: 5px 5px 5px black;
+    transition: 0.5s;
+}
+
+.whatsapp{
+  padding: 25px;
+}
+
+.instagram:hover, .facebook:hover, .whatsapp:hover{
+    background-color: burlywood;
+    margin-right: 10px;
+    box-shadow: 20px 10px 15px black;
+}
+
+.form{
+    background-color: cadetblue;
+    padding-left: 10%;
+    padding-top: 90px;
+    height: 550px;
+}
+
+label{
+    font-size: 25px;
+}
+
+input{
+    height: 30px;
+    width: 100%;
+    padding-left: 10px;
+    margin-right: 50px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+input:hover{
+    box-shadow: 7px 7px 7px black;
+}
+
+.judul-form{
+    background-color: white;
+    padding: 60px;
+    margin-right: 100px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.judul-form h1{
+    text-align: center;
+}
+
+.submit-form{
+    border: none;
+    cursor: pointer;
+    background-color: rgb(132, 206, 100);
+    margin-top: 20px;
+    padding: 10px 20px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    transition: 0.4s;
+}
+
+.submit-form:hover{
+    background-color: red;
+    box-shadow: 15px 10px 5px black;
+}
+
+.footer-akhir{
+    background-color: gray;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px 0 20px;
+    text-shadow: 3px 5px 8px black;
+}
+
+.sosmed a{
+    color: black;
+}
