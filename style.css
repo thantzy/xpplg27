@@ -373,12 +373,15 @@ li {
   background-color: white;
   border-radius: 10px;
   cursor: pointer;
+  width: 100%;
   padding: 20px;
-  width: 100% auto;
+  margin-left: 10px;
   height: auto;
   box-shadow: 5px 5px 5px black;
   transition: 0.5s;
 }
+
+
 
 .instagram:hover,
 .facebook:hover,
