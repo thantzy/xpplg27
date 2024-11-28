@@ -3,11 +3,7 @@
 body {
   background: url(section1.jpg);
   height: auto; 
-}
-
-html{
   width: 100%;
-  max-width: 738px;
 }
 
 * {
@@ -381,14 +377,9 @@ li {
   border-radius: 10px;
   cursor: pointer;
   padding: 20px;
-  margin-left: 10px;
   height: auto;
   box-shadow: 5px 5px 5px black;
   transition: 0.5s;
-}
-
-.whatsapp {
-  padding: 25px;
 }
 
 .instagram:hover,
