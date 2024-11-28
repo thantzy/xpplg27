@@ -327,7 +327,7 @@ a {
   height: auto;
 }
 
-#section-4{
+#section-4 {
   width: 100%;
   height: auto;
 }
@@ -344,7 +344,6 @@ a {
   justify-content: space-between;
   padding-top: 50px;
   height: auto;
-  width: 100%;
   font-weight: bold;
   justify-content: center;
 }
@@ -373,7 +372,6 @@ li {
   background-color: white;
   border-radius: 10px;
   cursor: pointer;
-  width: 100%;
   padding: 20px;
   margin-left: 10px;
   height: auto;
@@ -381,7 +379,9 @@ li {
   transition: 0.5s;
 }
 
-
+.whatsapp {
+  padding: 25px;
+}
 
 .instagram:hover,
 .facebook:hover,
