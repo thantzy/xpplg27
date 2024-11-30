@@ -423,11 +423,17 @@ input:hover {
   box-shadow: 7px 7px 7px black;
 }
 
+form{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
 .judul-form {
   background-color: white;
   padding: 60px;
   width: 50%;
-  margin-right: 100px;
+  margin-right: 100px auto;
   border-radius: 20px;
   box-shadow: 5px 5px 5px black;
 }
