@@ -427,6 +427,7 @@ form{
   justify-content: center;
   display: flex;
   align-items: center;
+  margin: auto;
 }
 
 .judul-form {
