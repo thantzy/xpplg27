@@ -23,7 +23,6 @@ body {
 .image-head {
   height: 30px;
   border-radius: 50%;
-  padding-right: 10px;
 }
 
 header {
@@ -32,14 +31,18 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
+  height: auto;
+  margin: auto;
   box-shadow: 0 0 10px black;
 }
 
 nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto;
   width: 100%;
-  justify-content: space-between;
   align-items: center;
+  margin-left: 10%;
+  margin-right: 5%;
 }
 
 .logo {
@@ -48,12 +51,18 @@ nav {
   padding-left: 20px;
   color: #335338;
   display: flex;
+  margin-left: -10%;
 }
 
 .links {
-  margin: 0 0 auto;
+  height: auto;
   list-style: none;
   display: flex;
+  margin: auto;
+}
+
+.all-links{
+  width: 100%;
 }
 
 .links li {
