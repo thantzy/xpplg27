@@ -333,8 +333,6 @@ a {
   height: auto;
 }
 
-
-
 .all-sosmed {
   width: 100%;
   height: 300px;
@@ -456,4 +454,12 @@ input:hover {
 
 .sosmed a {
   color: black;
+}
+
+.section-second,
+.section-third,
+.section-forth{
+  width: 100%;
+  height: auto;
+  margin: auto;
 }
